@@ -43,7 +43,7 @@ let price = 0.0;
 let igv = 0.18;
 for (let key in alumno) {
     price = price + alumno.total;
-	console.log(`${key}: ${employee[key]}`);
+	console.log(`${key}: ${alumno[key]}`);
 }
 console.log(`IGV: ${igv}`);
 console.log(`Sub Total: ${price}`);

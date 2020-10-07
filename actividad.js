@@ -39,15 +39,21 @@ const lista = {
         total: 5.0,
     }
 };
-let price = 0.0;
-let igv = 0.18;
+let subtotal = 0.0;
+
 for (let key in alumno) {
-    price = price + alumno.total;
-	console.log(`${key}: ${alumno[key]}`);
+    subtotal = subtotal + alumno.total;
 }
-console.log(`IGV: ${igv}`);
-console.log(`Sub Total: ${price}`);
-price = price-(price*igv);
-console.log(`Total: ${price}`);
+let igv = subtotal*0.18;
+let total = price-(price*igv);
+
+
+const factura = {
+    total: `${price}`,
+    subTotal: `${subtotal}`,
+    igv: igv
+};
+
+console.log(factura);
 
 

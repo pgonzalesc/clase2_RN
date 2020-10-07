@@ -45,13 +45,13 @@ for (let key in alumno) {
     subtotal = subtotal + alumno.total;
 }
 let igv = subtotal*0.18;
-let total = price-(price*igv);
+let total = subtotal + total;
 
 
 const factura = {
-    total: `${price}`,
+    total: `${total}`,
     subTotal: `${subtotal}`,
-    igv: igv
+    igv: `${total}`
 };
 
 console.log(factura);

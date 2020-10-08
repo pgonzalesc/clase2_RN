@@ -41,8 +41,8 @@ const lista = {
 };
 let subtotal = 0.0;
 
-for (let key in alumno) {
-    subtotal = subtotal + alumno.total;
+for (let key in lista) {
+    subtotal = subtotal + lista[key].total;
 }
 let igv = subtotal*0.18;
 let total = subtotal + igv;
